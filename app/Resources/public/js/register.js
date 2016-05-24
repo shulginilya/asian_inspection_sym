@@ -19,6 +19,9 @@ Registration = (function() {
         $('#regi_psw').hidePassword();
       }
     });
+    $("select.selectit_enabled").selectBoxIt({
+      theme: 'bootstrap'
+    });
   };
 
   Registration._formDataCollector = function() {

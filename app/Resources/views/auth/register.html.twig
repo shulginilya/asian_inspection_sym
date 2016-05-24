@@ -37,7 +37,7 @@
               <form>
                 <div class="form-group">
                   <label for="regi_country">Country</label>
-                  <select class="form-control" id="regi_country" name="regi_country">
+                  <select class="form-control selectit_enabled" id="regi_country" name="regi_country">
                     <option value="Hong Kong">Hong Kong</option>
                     <option value="Singapore">Singapore</option>
                     <option value="Malaysia">Malaysia</option>
@@ -57,9 +57,10 @@
                   <input type="password" class="form-control" id="regi_psw" name="regi_psw">
                 </div>
                 <div class="checkbox">
-                  <label class="none_user_select">
-                    <input type="checkbox" id="regi_show_psw"> Show password
-                  </label>
+                  <label class="checkbox custom_checkbox">Show password
+                		<input type="checkbox" id="regi_show_psw">
+                		<div class="overlay"></div>
+                	</label>
                 </div>
                 <div class="clearfix">
                   <div class="row">

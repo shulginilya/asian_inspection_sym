@@ -8,9 +8,12 @@ var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('js_vendor', function () {
     return gulp.src(['bower_components/jquery/jquery.js',
+        'bower_components/jquery-ui/jquery-ui.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
-        'bower_components/jcookie/jcookie.js',
-        'bower_components/hideshowpassword/hideShowPassword.js'])
+        'bower_components/hideshowpassword/hideShowPassword.js',
+        'bower_components/jquery.inputmask/dist/inputmask/inputmask.js',
+        'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.js',
+        'bower_components/jquery.selectBoxIt/src/javascripts/jquery.selectBoxIt.js'])
         .pipe(concat('vendor.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
@@ -28,7 +31,8 @@ gulp.task('js', function () {
 
 gulp.task('css_vendor', function () {
     return gulp.src([
-        'bower_components/bootstrap/dist/css/bootstrap.css'])
+        'bower_components/bootstrap/dist/css/bootstrap.css',
+        'bower_components/jquery.selectBoxIt/src/stylesheets/jquery.selectBoxIt.css'])
         .pipe(gulpif(/[.]less/, less()))
         .pipe(concat('vendor.css'))
         .pipe(uglifycss())

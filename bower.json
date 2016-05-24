@@ -22,8 +22,10 @@
   ],
   "dependencies": {
     "jquery": "1.10.x",
+    "jquery-ui": "1.11.x",
     "bootstrap": "3.3.6",
-    "jcookie": "1.2.x",
-    "hideshowpassword": "2.0.x"
+    "hideshowpassword": "2.0.x",
+    "jquery.inputmask": "3.x",
+    "jquery.selectBoxIt": "3.8.x"
   }
 }
