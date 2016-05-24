@@ -8,7 +8,9 @@ var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('js_vendor', function () {
     return gulp.src(['bower_components/jquery/jquery.js',
-        'bower_components/bootstrap/dist/js/bootstrap.js'])
+        'bower_components/bootstrap/dist/js/bootstrap.js',
+        'bower_components/jcookie/jcookie.js',
+        'bower_components/hideshowpassword/hideShowPassword.js'])
         .pipe(concat('vendor.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))

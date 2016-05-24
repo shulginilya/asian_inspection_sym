@@ -22,6 +22,8 @@
   ],
   "dependencies": {
     "jquery": "1.10.x",
-    "bootstrap": "3.3.6"
+    "bootstrap": "3.3.6",
+    "jcookie": "1.2.x",
+    "hideshowpassword": "2.0.x"
   }
 }

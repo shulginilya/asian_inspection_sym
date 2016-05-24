@@ -46,6 +46,12 @@ body {
   .form-control {
     border-radius: 0px;
   }
+  .none_user_select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
 
   .register_form_wr {
     margin-top: 60px;
@@ -120,13 +126,36 @@ body {
     .social_navi {
       padding-left: 0px;
       margin-bottom: 0px;
+      margin-top: 15px;
       list-style: none;
       li {
         float: left;
         margin-right: 10px;
-        line-height: 50px;
-        a {
-          color: #babab6;
+        &.facebook {
+          a {
+            color: #3b5998;
+          }
+        }
+        &.twitter {
+          a {
+            color: #55acee;
+          }
+        }
+        &.youtube {
+          a {
+            color: #e02f2f;
+          }
+        }
+        &.google {
+          a {
+            color: #e03333;
+          }
+        }
+        &.linkedin {
+          margin-right: 15px;
+          a {
+            color: #007bb5;
+          }
         }
         &:last-child {
           margin-right: 0px;
