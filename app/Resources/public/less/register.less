@@ -256,6 +256,35 @@ body {
     }
   }
 
+  @media (max-width: 880px) {
+    .root {
+      .root_footer {
+        height: 100px;
+      }
+    }
+    footer {
+      height: 100px;
+      .basic_navi {
+        display: inline-block;
+        margin-top: 15px;
+        li {
+          line-height: normal;
+        }
+      }
+      .social_navi {
+        display: inline-block;
+        float: none !important;
+      }
+      .row {
+        > div {
+          float: none;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
   @media (max-width: 640px) {
     .reg_form_holder {
       width: 320px;
