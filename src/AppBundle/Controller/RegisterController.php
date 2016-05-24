@@ -29,7 +29,6 @@ class RegisterController extends Controller
         'status' => false
       );
       $user_data = $request->request->all();
-      // TODO: vaildate agains xss before saving
       $user = new User();
       $user->setFname($user_data['fname']);
       $user->setLname($user_data['lname']);
