@@ -248,4 +248,33 @@ body {
     }
   }
 
+  @media (max-width: 1200px) {
+    .reg_form_holder {
+      float: none;
+      width: 390px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .reg_form_holder {
+      width: 320px;
+    }
+    .register_form_wr {
+      .panel {
+        .panel-body {
+          .swipe_form {
+            width: 300px;
+            .btn-success {
+              margin-top: 10px;
+            }
+          }
+          &.step2_active {
+            margin-left: -300px;
+          }
+        }
+      }
+    }
+  }
+
 }
