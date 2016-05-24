@@ -3,12 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Register A/B Test{% endblock %}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ asset('css/vendor.css') }}"/>
         <link rel="stylesheet" href="{{ asset('css/register.css') }}"/>
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div class="root">
+          {{ include('partials/header.html.twig') }}
+          <div class="content_section">{% block body %}{% endblock %}</div>
+          <div class="root_footer"></div>
+        </div>
+        {{ include('partials/footer.html.twig') }}
 
         <script src="{{ asset('js/vendor.js') }}"></script>
         <script src="{{ asset('js/register.js') }}"></script>

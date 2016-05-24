@@ -2,4 +2,83 @@
 
 {% block body %}
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <div class="register_form_wr">
+        <div class="panel">
+          <div class="panel-heading">
+            <a class="logo" href="#">AI</a>
+          </div>
+          <div class="panel-body swipe_forms_wr">
+            <div class="swipe_form">
+              <form>
+                <div class="form-group">
+                  <label for="regi_fname">First Name</label>
+                  <input type="text" class="form-control" id="regi_fname" name="regi_fname">
+                </div>
+                <div class="form-group">
+                  <label for="regi_lname">Last Name</label>
+                  <input type="text" class="form-control" id="regi_lname" name="regi_lname">
+                </div>
+                <div class="form-group">
+                  <label for="regi_company">Company</label>
+                  <input type="text" class="form-control" id="regi_company" name="regi_company">
+                </div>
+                <div class="form-group">
+                  <label for="regi_email">Email</label>
+                  <input type="email" class="form-control" id="regi_email" name="regi_email">
+                </div>
+                <button type="submit" class="btn btn-default btn-block" onclick="return Registration._nextRegistrationStep(this)">Next</button>
+                <p class="have_account_disc text-center">Already have an account? <a href="#">Sign in</a></p>
+              </form>
+            </div>
+            <div class="swipe_form">
+              <form>
+                <div class="form-group">
+                  <label for="regi_country">Country</label>
+                  <select class="form-control" id="regi_country" name="regi_country">
+                    <option value="Hong Kong">Hong Kong</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Thailand">Thailand</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="regi_phone">Phone No.</label>
+                  <input type="text" class="form-control" id="regi_phone" name="regi_phone">
+                </div>
+                <div class="form-group">
+                  <label for="regi_username">Username</label>
+                  <input type="text" class="form-control" id="regi_username" name="regi_username">
+                </div>
+                <div class="form-group">
+                  <label for="regi_psw">Password</label>
+                  <input type="text" class="form-control" id="regi_psw" name="regi_psw">
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" id="regi_show_psw"> Show password
+                  </label>
+                </div>
+                <div class="clearfix">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <button type="button" class="btn btn-default btn-block" onclick="Registration._previousRegistrationStep(this)">Back</button>
+                    </div>
+                    <div class="col-sm-6">
+                      <button type="submit" class="btn btn-success btn-block" onclick="return Registration._finalRegistrationStep(this)">Register</button>
+                    </div>
+                  </div>
+                </div>
+                <p class="have_account_disc text-center">Already have an account? <a href="#">Sign in</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
