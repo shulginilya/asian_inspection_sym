@@ -1,0 +1,22 @@
+{
+  "name": "abtest",
+  "version": "0.0.1",
+  "author": "Ilya Shulgin",
+  "description": "ab test bower components",
+  "keywords": [],
+  "dependencies": {
+    "gulp": "3.9.x",
+    "gulp-if": "2.0.x",
+    "gulp-uglifycss": "1.0.x",
+    "gulp-less": "3.1.x",
+    "gulp-concat": "2.6.x",
+    "gulp-sourcemaps": "1.6.x",
+    "gulp-rename": "1.2.x",
+    "gulp-watch": "4.3.x",
+    "grunt-cli": "1.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shulginilya/asian_inspection_sym.git"
+  }
+}

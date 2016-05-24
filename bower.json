@@ -1,0 +1,27 @@
+{
+  "name": "A/B test",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "Ilya Shulgin <ishulgin8@gmail.com>"
+  ],
+  "description": "A/B test bower components",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "A/B test"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.10.x",
+    "bootstrap": "3.3.6"
+  }
+}
