@@ -26,6 +26,7 @@
     "bootstrap": "3.3.6",
     "hideshowpassword": "2.0.x",
     "jquery.inputmask": "3.x",
-    "jquery.selectBoxIt": "3.8.x"
+    "jquery.selectBoxIt": "3.8.x",
+    "toastr": "2.1.x"
   }
 }

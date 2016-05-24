@@ -13,7 +13,8 @@ gulp.task('js_vendor', function () {
         'bower_components/hideshowpassword/hideShowPassword.js',
         'bower_components/jquery.inputmask/dist/inputmask/inputmask.js',
         'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.js',
-        'bower_components/jquery.selectBoxIt/src/javascripts/jquery.selectBoxIt.js'])
+        'bower_components/jquery.selectBoxIt/src/javascripts/jquery.selectBoxIt.js',
+        'bower_components/toastr/toastr.js'])
         .pipe(concat('vendor.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
@@ -32,7 +33,8 @@ gulp.task('js', function () {
 gulp.task('css_vendor', function () {
     return gulp.src([
         'bower_components/bootstrap/dist/css/bootstrap.css',
-        'bower_components/jquery.selectBoxIt/src/stylesheets/jquery.selectBoxIt.css'])
+        'bower_components/jquery.selectBoxIt/src/stylesheets/jquery.selectBoxIt.css',
+        'bower_components/toastr/toastr.css'])
         .pipe(gulpif(/[.]less/, less()))
         .pipe(concat('vendor.css'))
         .pipe(uglifycss())
