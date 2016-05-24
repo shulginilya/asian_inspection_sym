@@ -120,10 +120,13 @@ Registration = (function() {
       }
       toastr.error(reg_error_msg);
     } else {
-      console.log("submit form data: ", data_collector.data);
       registration_call = $.post("/register/user", data_collector.data, 'json');
       registration_call.done(function(response_data) {
-        console.log("response_data: ", response_data);
+        if(response_data.status) {
+          toastr.success("<p>" + response_data.msg + "</p>");
+        } else {
+          toastr.error("<p>" + response_data.msg + "</p>");
+        }
       });
     }
     return false;
