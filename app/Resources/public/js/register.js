@@ -1,4 +1,4 @@
-var Payments, registration;
+var Registration, registration;
 
 Registration = (function() {
   function Registration(options) {
