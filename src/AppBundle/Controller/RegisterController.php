@@ -42,9 +42,8 @@ class RegisterController extends Controller
         $em = $this->getDoctrine()->getManager();
         $em->persist($user);
         $em->flush();
-        $res_data['staus'] = true;
+        $res_data['status'] = true;
         $res_data['msg'] = 'User is successfully created';
-        $res_data['saved_user_id'] = $user->id;
       } catch(\Exception $e) {
         $res_data['msg'] = $e->getMessage();
       }

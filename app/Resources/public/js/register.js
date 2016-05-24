@@ -124,6 +124,7 @@ Registration = (function() {
       registration_call.done(function(response_data) {
         if(response_data.status) {
           toastr.success("<p>" + response_data.msg + "</p>");
+          setTimeout("location.reload()", 3000);
         } else {
           toastr.error("<p>" + response_data.msg + "</p>");
         }
